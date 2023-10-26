@@ -1,0 +1,149 @@
+/* Reset styling */
+body, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: 	#12110e; 
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    justify-content: space-between; 
+    padding: 10px 0; 
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.nav-list {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+}
+
+.nav-list li {
+    display: inline;
+    margin-right: 20px; 
+    margin-left: 10px; /
+}
+
+.nav-list li:last-child {
+    margin-right: 0; /* Hapus margin kanan pada item terakhir */
+}
+
+.nav-list li a {
+    text-decoration: none;
+    color: #fff; /* Warna teks tautan */
+    font-weight: bold;
+    transition: color 0.3s ease; /* Animasi perubahan warna saat hover */
+    float: left;
+    padding-left: 40px;
+}
+
+.nav-list li a:hover {
+    color: #DEB887; /* Warna teks saat dihover */
+}
+.profile-picture {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+
+}
+
+/* Reset styling */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styling */
+.header{
+    background-image: url(../img/banner.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat; /* Agar gambar latar tidak diulang */
+    background-position: center; /* Pusatkan gambar latar belakang */
+    background-color: #333; /* Warna latar belakang header */
+    color: #fff; /* Warna teks header */
+    text-align: center;
+    padding: 100px 0; /* Padding atas dan bawah */
+}
+
+.header-title {
+    font-size: 36px; 
+    font-weight: bold; 
+    margin-bottom: 20px; 
+}
+
+.header-subtitle {
+    font-size: 18px; 
+}
+
+.profile-picture img {
+    display: block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+/* Intro teks styling */
+.intro {
+    text-align: center; /* Pusatkan teks */
+    padding: 20px; /* Padding atas dan bawah */
+    background-color: white; /* Warna latar belakang intro teks */
+    color: #333; /* Warna teks intro teks */
+}
+
+.intro h1 {
+    font-size: 24px; /* Ukuran teks judul */
+    margin-bottom: 10px; /* Jarak bawah judul */
+}
+
+.intro p {
+    font-size: 16px; /* Ukuran teks paragraf */
+}
+
+/* Kotak styling */
+
+.box-container {
+    display: flex;
+    justify-content: center; /* Pusatkan kotak secara horizontal */
+    align-items: center; /* Pusatkan kotak secara vertikal */
+
+.box {
+    width: 300px; 
+    height: 350px;
+    background-color: #DEB887; /* Warna latar belakang kotak */
+    color: #333; /* Warna teks kotak */
+    padding: 20px; /* Padding atas dan bawah */
+    margin: 10px; /* Margin di sekitar kotak */
+    border: 1px solid #ddd; /* Garis tepi kotak */
+    border-radius: 5px; /* Sudut kotak yang melengkung */
+    text-align: center;
+}
+
+.box h2 {
+    font-size: 20px; /* Ukuran teks judul kotak */
+    margin-bottom: 10px; /* Jarak bawah judul kotak */
+}
+
+.box p {
+    font-size: 16px; /* Ukuran teks paragraf kotak */
+}
+
+/* Footer styling */
+.footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: #fff; /* Warna teks footer */
+    text-align: center; /* Pusatkan teks di dalam footer */
+    padding: 10px 0; /* Padding atas dan bawah */
+}
+
+.footer p {
+    font-size: 14px; /* Ukuran teks footer */
+}
+
+.footer a {
+    color: #ffcc00; /* Warna tautan footer */
+    text-decoration: none;
+}
