@@ -16,6 +16,8 @@
                 <div class="pb-3">
                   <a href='{{url('siswa/create')}}' class="btn btn-primary">+ Tambah Data</a>
                 </div>
+
+                
           
                 <table class="table table-striped">
                     <thead>
@@ -36,14 +38,15 @@
                             <td>{{$i}}</td>
                             <td>{{$item->nis}}</td>
                             <td>{{$item->nama}}</td>
-                            <td>{{$item->Jenis_Kelamin}}</td>
+                            <td>{{$item->jeniskelamin}}</td>
+                            <td>{{$item->tgl_lahir}}</td>
                             <td>{{$item->alamat}}</td>
                             <td>
                                 <a href='{{url('siswa/'.$item->nis.'/edit')}}' class="btn btn-warning btn-sm">Edit</a>
                                 <form onsubmit="return confirm('Yakin akan menghapus data?')"class='d-inline' action="{{url('siswa/'.$item->nis)}}" method="post">
                                     @csrf
                                     @method('DELETE')
-                                    <button type="submit" name="submit" class="btn btn-danger btn-sm">Del</button></form>
+                                    <button type="submit" name="submit" class="btn btn-danger btn-sm" id="delete" >Delete</button></form>
                                 
                                 
                             </td>

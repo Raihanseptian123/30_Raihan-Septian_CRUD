@@ -35,12 +35,24 @@
                 <div class="form-group row">
                     <label for="jeniskelamin" class="col-sm-2 col-form-label">Jenis Kelamin</label>
                     <div class="col-sm-10">
-                        <select name="jeniskelamin" id="jeniskelamin" class="form-control">
+                        <select name="jeniskelamin" value ="{{ Session::get('jeniskelamin')}}" id="jeniskelamin" class="form-control">
                             <option value="Laki-laki">Laki-laki</option>
                             <option value="Perempuan">Perempuan</option>
                         </select>
                     </div>
                 </div>
+                <div class="mb-3 row">
+                    <label for="tanggallahir" class="col-sm-2 col-form-label">Tanggal Lahir</label>
+                    <div class="col-sm-10">
+                        <div class="input-group date">
+                            <input type="date" class="form-control" name="tgl_lahir" value="{{ Session::get('tgl_lahir') }}" id="tgl_lahir">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
                 
             </div>
             <div class="mb-3 row">
@@ -48,11 +60,22 @@
                 <div class="col-sm-10">
                     <input type="text" class="form-control" name='alamat'  value ="{{ Session::get('alamat')}}" id="alamat">
                 </div>
-            <div class="mb-3 row">
-                <label for="alamat" class="col-sm-2 col-form-label"></label>
-                <div class="col-sm-10"><button type="submit" class="btn btn-primary" name="submit">SIMPAN</button></div>
-            </div>
+                <div>
+                    <button type="submit" class="btn btn-primary" onclick="return confirm('yakin ingin melanjutkan?')">TAMBAH</button> 
+                </div>
+                
         </div>
+
+        <script>
+            $(function() {
+                // Aktifkan datepicker untuk input tanggal lahir
+                $("#tanggallahir").datepicker({
+                    format: 'yyyy-mm-dd', // Format tanggal
+                    autoclose: true,
+                    todayHighlight: true
+                });
+            });
+        </script>
     </form>
         <!-- AKHIR FORM -->
         @endsection

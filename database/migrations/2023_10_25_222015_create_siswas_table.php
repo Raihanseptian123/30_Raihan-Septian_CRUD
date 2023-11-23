@@ -15,7 +15,8 @@ return new class extends Migration
            $table->integer('nis');
            $table->unique('nis');
            $table->string('nama');
-           $table->string('Jenis_Kelamin');
+           $table->text('jeniskelamin');
+           $table->date('tgl_lahir');
            $table->text('alamat');
 
         });
